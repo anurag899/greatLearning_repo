@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     print('Loading the data')
 
-    wine_df = pd.read_csv('winequality-red.csv', sep=';')
+    wine_df = pd.read_csv('data/winequality-red.csv', sep=';')
 
     # Combine 7&8 together; combine 3 and 4 with 5 so that we have only 3 levels and a more balanced Y variable
     wine_df['quality'] = wine_df['quality'].replace(8, 7)
